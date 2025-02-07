@@ -1,139 +1,134 @@
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-</style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-*{
-    font-family: "Poppins", serif;
-    margin: 0;
-    padding: 0;
+* {
+  font-family: "Poppins", serif;
+  margin: 0;
+  padding: 0;
 }
-body{
-    background: rgb(9,9,121);
-background: linear-gradient(90deg, rgba(9,9,121,0.11442786069651745) 35%, rgba(0,212,255,0.12686567164179108) 100%);
-color:black ;
-text-align: center;
-padding: 10px;
-max-width: 1200px;
-margin: auto;
+body {
+  background: rgba(9, 9, 121);
+  background: linear-gradient(
+    90deg,
+    rgba(9, 9, 121, 0.11442786069651745) 35%,
+    rgba(0, 212, 255, 0.12686567164179108) 100%
+  );
+  color: black;
+  text-align: center;
+  padding: 10px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 /* navbar */
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    position: relative;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: relative;
 }
 
 .navbar_menu {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-
 .navbar_links {
-    display: flex;
-    list-style: none;
-    gap: 30px;
+  display: flex;
+  list-style: none;
+  gap: 30px;
 }
 
 a {
-    text-decoration: none;
-    color: black;
-    font-weight: 200;
+  text-decoration: none;
+  color: black;
+  font-weight: 200;
 }
 
-.navbar_button {
-    background-color: #002444;
-    color: white;
-    padding: 14px 25px;
-    border-radius: 40px;
-    cursor: pointer;
-    border: none;
-    font-size: 17px;
+.navbar_btn {
+  background-color: #002444;
+  color: white;
+  padding: 14px 25px;
+  border-radius: 40px;
+  cursor: pointer;
+  border: none;
+  font-size: 17px;
 }
 
-.navbar_button:hover {
-    background-color: #7500cf;
-    transition: 0.5s;
+.navbar_btn:hover {
+  background-color: #7500cf;
+  transition: 0.5s;
 }
-
 
 .logo {
-    font-weight: 600px;
-    font-size: 25px;
+  font-weight: 600px;
+  font-size: 25px;
 }
-
 
 /* hero section */
 .hero {
-    padding: 60px 20px;
+  padding: 60px 20px;
 }
 
-
 .herotext {
-    border: none;
-    background-color: transparent;
-    padding:  15px 24px;
-    border-radius: 40px;
-box-shadow: rgba(149, 157 , 165, 0.2) 0px 8px 24px;
-font-weight: 300;
-color: #7580ef;
+  border: none;
+  background-color: transparent;
+  padding: 15px 24px;
+  border-radius: 40px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  font-weight: 300;
+  color: #7580ef;
 }
 
 .herotext:hover {
-    background-color:#f5f5f5 ;
-    transition: 0.4s;
+  background-color: #f5f5f5;
+  transition: 0.4s;
 }
-
 
 .hero_title {
-    font-size: 3.3rem;
-    font-weight: 500;
+  font-size: 3.3rem;
+  font-weight: 500;
 }
 .hero_title span {
-    color: #7580ef;
+  color: #7580ef;
 }
 
 .hero_description {
-    padding: 20px;
-    max-width: 550px;
-    margin: auto;
+  padding: 20px;
+  max-width: 550px;
+  margin: auto;
 }
 
 .cta_btn {
-    background-color: #002444;
-    color: white;
-    padding: 35px 125px;
-    border-radius: 100px;
-    cursor: pointer;
-    border: none;
-    font-size: 17px;
+  background-color: #002444;
+  color: white;
+  padding: 35px 125px;
+  border-radius: 100px;
+  cursor: pointer;
+  border: none;
+  font-size: 17px;
 }
 
 .cta_btn:hover {
-    background-color: #7500cf;
-    transition: 0.5s;
+  background-color: #7500cf;
+  transition: 0.5s;
 }
 .hero_video {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 10px;
-    margin-top: 30px;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 10px;
+  margin-top: 30px;
 }
 
-
-@media screen and(max-width: 7680x) {
-    .hero_title {
-        font-size: 2.5rem;
-    }
-    .navbar{
-        flex-direction: row;
-    }
-        .navbar_menu {
-            display: none;
-        }
+@media screen and (max-width: 7680x) {
+  .hero_title {
+    font-size: 2.5rem;
+  }
+  .navbar {
+    flex-direction: row;
+  }
+  .navbar_menu {
+    display: none;
+  }
 }
-    
